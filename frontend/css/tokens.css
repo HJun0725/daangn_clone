@@ -1,0 +1,249 @@
+/*
+ * SEED Design 토큰 (DESIGN.md 기준)
+ * - 이름은 SEED의 토큰 이름을 그대로 따른다: $color.bg.brand-solid → --seed-color-bg-brand-solid
+ * - 화면 코드에서는 이 시맨틱 토큰만 쓰고, hex 값을 직접 쓰지 않는다.
+ */
+:root {
+  color-scheme: light;
+
+  /* ---------- color.fg ---------- */
+  --seed-color-fg-neutral: #1a1c20;
+  --seed-color-fg-neutral-muted: #555d6d;
+  --seed-color-fg-neutral-subtle: #868b94;
+  --seed-color-fg-neutral-inverted: #ffffff;
+  --seed-color-fg-placeholder: #b0b3ba;
+  --seed-color-fg-disabled: #d1d3d8;
+  --seed-color-fg-brand: #ff6600;
+  --seed-color-fg-brand-contrast: #e14d00;
+  --seed-color-fg-critical: #fa342c;
+  --seed-color-fg-critical-contrast: #921708;
+  --seed-color-fg-positive: #079171;
+  --seed-color-fg-positive-contrast: #075445;
+  --seed-color-fg-informative: #217cf9;
+  --seed-color-fg-informative-contrast: #0b4596;
+  --seed-color-fg-warning: #9b7821;
+  --seed-color-fg-warning-contrast: #4f3e1f;
+  --seed-color-fg-on-brand-solid: #ffffff;
+  --seed-color-fg-on-critical-solid: #ffffff;
+  --seed-color-fg-on-positive-solid: #ffffff;
+  --seed-color-fg-on-neutral-solid: #ffffff;
+
+  /* ---------- color.bg ---------- */
+  --seed-color-bg-layer-basement: #f3f4f5;
+  --seed-color-bg-layer-default: #ffffff;
+  --seed-color-bg-layer-default-pressed: #f7f8f9;
+  --seed-color-bg-layer-floating: #ffffff;
+  --seed-color-bg-layer-floating-pressed: #f7f8f9;
+  --seed-color-bg-brand-solid: #ff6600;
+  --seed-color-bg-brand-solid-pressed: #e14d00;
+  --seed-color-bg-brand-weak: #fff2ec;
+  --seed-color-bg-brand-weak-pressed: #ffe8db;
+  --seed-color-bg-neutral-solid: #2a3038;
+  --seed-color-bg-neutral-solid-pressed: #555d6d;
+  --seed-color-bg-neutral-weak: #f3f4f5;
+  --seed-color-bg-neutral-weak-pressed: #eeeff1;
+  --seed-color-bg-neutral-weak-alpha: #14273b0d;
+  --seed-color-bg-neutral-weak-alpha-pressed: #000f2d11;
+  --seed-color-bg-neutral-muted: #f7f8f9;
+  --seed-color-bg-disabled: #f3f4f5;
+  --seed-color-bg-critical-solid: #fa342c;
+  --seed-color-bg-critical-solid-pressed: #ca1d13;
+  --seed-color-bg-critical-weak: #fdf0f0;
+  --seed-color-bg-positive-solid: #079171;
+  --seed-color-bg-positive-weak: #edfaf6;
+  --seed-color-bg-informative-weak: #eff6ff;
+  --seed-color-bg-warning-weak: #fff7de;
+  --seed-color-bg-overlay: #00000074;
+  --seed-color-bg-transparent-pressed: #00000007;
+  --seed-color-bg-transparent-selected: #0000000c;
+
+  /* ---------- color.stroke ---------- */
+  --seed-color-stroke-neutral-subtle: #0000000c;
+  --seed-color-stroke-neutral-muted: #00000010;
+  --seed-color-stroke-neutral-weak: #000f3323;
+  --seed-color-stroke-neutral-contrast: #1a1c20;
+  --seed-color-stroke-brand-weak: #ffd5c0;
+  --seed-color-stroke-critical-solid: #fa342c;
+  --seed-color-stroke-positive-weak: #b9e9d2;
+  --seed-color-stroke-focus-ring: #5e98fe;
+
+  /* ---------- color.manner-temp (l1 ~ l10) ---------- */
+  --seed-color-manner-temp-l1-text: #757b85;  --seed-color-manner-temp-l1-bg: #f1f2f3;
+  --seed-color-manner-temp-l2-text: #ab863f;  --seed-color-manner-temp-l2-bg: #f8f4ec;
+  --seed-color-manner-temp-l3-text: #e08a00;  --seed-color-manner-temp-l3-bg: #fff5e5;
+  --seed-color-manner-temp-l4-text: #f57e00;  --seed-color-manner-temp-l4-bg: #fff3e5;
+  --seed-color-manner-temp-l5-text: #ff7300;  --seed-color-manner-temp-l5-bg: #fff1e5;
+  --seed-color-manner-temp-l6-text: #ff6600;  --seed-color-manner-temp-l6-bg: #fff0e5;
+  --seed-color-manner-temp-l7-text: #ff5100;  --seed-color-manner-temp-l7-bg: #ffefe5;
+  --seed-color-manner-temp-l8-text: #ff3300;  --seed-color-manner-temp-l8-bg: #ffeee5;
+  --seed-color-manner-temp-l9-text: #e82c45;  --seed-color-manner-temp-l9-bg: #fdeded;
+  --seed-color-manner-temp-l10-text: #cb0123; --seed-color-manner-temp-l10-bg: #ffebee;
+
+  /* ---------- color.banner ---------- */
+  --seed-color-banner-blue: #e1f7ff;
+  --seed-color-banner-cool-gray: #ebf1f5;
+  --seed-color-banner-green: #f0fbe5;
+  --seed-color-banner-orange: #fff2e1;
+  --seed-color-banner-pink: #ffebf1;
+  --seed-color-banner-purple: #f5ecff;
+  --seed-color-banner-teal: #e6faf6;
+  --seed-color-banner-warm-gray: #f2f0ee;
+  --seed-color-banner-yellow: #fffae1;
+
+  /* ---------- shadow ---------- */
+  --seed-shadow-s1: 0 1px 4px 0 #00000014;
+  --seed-shadow-s2: 0 2px 10px 0 #0000001a;
+  --seed-shadow-s3: 0 4px 16px 0 #0000001f;
+
+  /* ---------- dimension ---------- */
+  --seed-dimension-x0_5: 2px;
+  --seed-dimension-x1: 4px;
+  --seed-dimension-x1_5: 6px;
+  --seed-dimension-x2: 8px;
+  --seed-dimension-x2_5: 10px;
+  --seed-dimension-x3: 12px;
+  --seed-dimension-x3_5: 14px;
+  --seed-dimension-x4: 16px;
+  --seed-dimension-x4_5: 18px;
+  --seed-dimension-x5: 20px;
+  --seed-dimension-x6: 24px;
+  --seed-dimension-x7: 28px;
+  --seed-dimension-x8: 32px;
+  --seed-dimension-x9: 36px;
+  --seed-dimension-x10: 40px;
+  --seed-dimension-x12: 48px;
+  --seed-dimension-x13: 52px;
+  --seed-dimension-x14: 56px;
+  --seed-dimension-x16: 64px;
+  --seed-dimension-spacing-x-global-gutter: 16px;
+  --seed-dimension-spacing-x-between-chips: 8px;
+  --seed-dimension-spacing-y-component-default: 12px;
+  --seed-dimension-spacing-y-between-text: 6px;
+  --seed-dimension-spacing-y-screen-bottom: 56px;
+
+  /* ---------- radius ---------- */
+  --seed-radius-r1: 4px;
+  --seed-radius-r1_5: 6px;
+  --seed-radius-r2: 8px;
+  --seed-radius-r2_5: 10px;
+  --seed-radius-r3: 12px;
+  --seed-radius-r4: 16px;
+  --seed-radius-r5: 20px;
+  --seed-radius-r6: 24px;
+  --seed-radius-full: 9999px;
+
+  /* ---------- typography (1rem = 16px) ---------- */
+  --seed-font-size-t1: 0.6875rem;  --seed-line-height-t1: 0.9375rem;
+  --seed-font-size-t2: 0.75rem;    --seed-line-height-t2: 1rem;
+  --seed-font-size-t3: 0.8125rem;  --seed-line-height-t3: 1.125rem;
+  --seed-font-size-t4: 0.875rem;   --seed-line-height-t4: 1.1875rem;
+  --seed-font-size-t5: 1rem;       --seed-line-height-t5: 1.375rem;
+  --seed-font-size-t6: 1.125rem;   --seed-line-height-t6: 1.5rem;
+  --seed-font-size-t7: 1.25rem;    --seed-line-height-t7: 1.6875rem;
+  --seed-font-size-t8: 1.375rem;   --seed-line-height-t8: 1.875rem;
+  --seed-font-size-t9: 1.5rem;     --seed-line-height-t9: 2rem;
+  --seed-font-size-t10: 1.625rem;  --seed-line-height-t10: 2.1875rem;
+  --seed-font-size-t11: 1.75rem;   --seed-line-height-t11: 2.375rem;
+  --seed-font-size-t12: 2rem;      --seed-line-height-t12: 2.625rem;
+  --seed-font-size-t13: 2.5rem;    --seed-line-height-t13: 3.25rem;
+  --seed-font-weight-regular: 400;
+  --seed-font-weight-medium: 500;
+  --seed-font-weight-bold: 700;
+
+  /* ---------- motion ---------- */
+  --seed-duration-d2: 100ms;
+  --seed-duration-d3: 150ms;
+  --seed-duration-d4: 200ms;
+  --seed-duration-d6: 300ms;
+  --seed-duration-color-transition: 150ms;
+  --seed-timing-function-easing: cubic-bezier(0.35, 0, 0.35, 1);
+  --seed-timing-function-enter: cubic-bezier(0, 0, 0.15, 1);
+  --seed-timing-function-exit: cubic-bezier(0.35, 0, 1, 1);
+  --seed-timing-function-pressed-scale: cubic-bezier(0, 0, 0.15, 1);
+}
+
+/* 다크 테마: 실제 당근 웹과 같이 시스템 설정을 따른다. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --seed-color-fg-neutral: #f3f4f5;
+    --seed-color-fg-neutral-muted: #dcdee3;
+    --seed-color-fg-neutral-subtle: #b0b3ba;
+    --seed-color-fg-neutral-inverted: #16171b;
+    --seed-color-fg-placeholder: #868b94;
+    --seed-color-fg-disabled: #5b606a;
+    --seed-color-fg-brand: #ff6600;
+    --seed-color-fg-brand-contrast: #ff6600;
+    --seed-color-fg-critical: #ff6e60;
+    --seed-color-fg-critical-contrast: #f8c5c3;
+    --seed-color-fg-positive: #22b27f;
+    --seed-color-fg-positive-contrast: #93e5c0;
+    --seed-color-fg-informative: #41a2f9;
+    --seed-color-fg-informative-contrast: #b9d7fb;
+    --seed-color-fg-warning: #ca901c;
+    --seed-color-fg-warning-contrast: #e5d49b;
+    --seed-color-fg-on-neutral-solid: #16171b;
+
+    --seed-color-bg-layer-basement: #000000;
+    --seed-color-bg-layer-default: #16171b;
+    --seed-color-bg-layer-default-pressed: #2b2e35;
+    --seed-color-bg-layer-floating: #1d2025;
+    --seed-color-bg-layer-floating-pressed: #2b2e35;
+    --seed-color-bg-brand-solid: #ff6600;
+    --seed-color-bg-brand-solid-pressed: #ff9e65;
+    --seed-color-bg-brand-weak: #31241f;
+    --seed-color-bg-brand-weak-pressed: #4b291c;
+    --seed-color-bg-neutral-solid: #f3f4f5;
+    --seed-color-bg-neutral-solid-pressed: #dcdee3;
+    --seed-color-bg-neutral-weak: #2b2e35;
+    --seed-color-bg-neutral-weak-pressed: #393d46;
+    --seed-color-bg-neutral-weak-alpha: #c8ddff25;
+    --seed-color-bg-neutral-weak-alpha-pressed: #cfddff35;
+    --seed-color-bg-neutral-muted: #1d2025;
+    --seed-color-bg-disabled: #2b2e35;
+    --seed-color-bg-critical-solid: #f73526;
+    --seed-color-bg-critical-solid-pressed: #ff6e60;
+    --seed-color-bg-critical-weak: #322323;
+    --seed-color-bg-positive-solid: #117956;
+    --seed-color-bg-positive-weak: #202926;
+    --seed-color-bg-informative-weak: #202742;
+    --seed-color-bg-warning-weak: #302819;
+    --seed-color-bg-transparent-pressed: #ffffff0d;
+    --seed-color-bg-transparent-selected: #ffffff17;
+
+    --seed-color-stroke-neutral-subtle: #ffffff0d;
+    --seed-color-stroke-neutral-muted: #ffffff17;
+    --seed-color-stroke-neutral-weak: #d0deff46;
+    --seed-color-stroke-neutral-contrast: #f3f4f5;
+    --seed-color-stroke-brand-weak: #6b311c;
+    --seed-color-stroke-critical-solid: #ff6e60;
+    --seed-color-stroke-positive-weak: #20493b;
+    --seed-color-stroke-focus-ring: #1e82eb;
+
+    --seed-color-manner-temp-l1-text: #b8b8b9;  --seed-color-manner-temp-l1-bg: #292929;
+    --seed-color-manner-temp-l2-text: #f5db97;  --seed-color-manner-temp-l2-bg: #332605;
+    --seed-color-manner-temp-l3-text: #fdda65;  --seed-color-manner-temp-l3-bg: #372b01;
+    --seed-color-manner-temp-l4-text: #fbbe55;  --seed-color-manner-temp-l4-bg: #372301;
+    --seed-color-manner-temp-l5-text: #faac4b;  --seed-color-manner-temp-l5-bg: #371f01;
+    --seed-color-manner-temp-l6-text: #fc9855;  --seed-color-manner-temp-l6-bg: #351b03;
+    --seed-color-manner-temp-l7-text: #f97a25;  --seed-color-manner-temp-l7-bg: #371701;
+    --seed-color-manner-temp-l8-text: #fe6a34;  --seed-color-manner-temp-l8-bg: #380f00;
+    --seed-color-manner-temp-l9-text: #fe6a5d;  --seed-color-manner-temp-l9-bg: #380500;
+    --seed-color-manner-temp-l10-text: #fb6f82; --seed-color-manner-temp-l10-bg: #34040a;
+
+    --seed-color-banner-blue: #0d2a3a;
+    --seed-color-banner-cool-gray: #242c33;
+    --seed-color-banner-green: #1e361c;
+    --seed-color-banner-orange: #42230a;
+    --seed-color-banner-pink: #3b172c;
+    --seed-color-banner-purple: #2e1e45;
+    --seed-color-banner-teal: #143633;
+    --seed-color-banner-warm-gray: #2f2b27;
+    --seed-color-banner-yellow: #3e2b00;
+
+    --seed-shadow-s1: 0 1px 4px 0 #00000080;
+    --seed-shadow-s2: 0 2px 10px 0 #000000ad;
+    --seed-shadow-s3: 0 4px 16px 0 #000000cc;
+  }
+}

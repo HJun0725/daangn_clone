@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>당근</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='M14 26c-.6 0-7.5-6.4-7.5-12.3C6.5 9.4 9.9 6.5 14 6.5s7.5 2.9 7.5 7.2C21.5 19.6 14.6 26 14 26z' fill='%23ff6600'/%3E%3Cpath d='M14.2 6.2c-.3-2 .5-3.6 2.3-4.4.5 1.9-.3 3.5-2.3 4.4z' fill='%2300a05b'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <header class="site-header" id="header"></header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="site-footer" id="footer"></footer>
+  <noscript><p style="padding:24px">이 사이트를 이용하려면 자바스크립트를 켜 주세요.</p></noscript>
+
+  <!-- 순서가 중요하다: 설정 → 공통 도구 → 목 서버 → API → 공용 화면 조각 → 라우터 → 화면들 -->
+  <script src="js/config.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/mock/seed.js"></script>
+  <script src="js/mock/server.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/buy-sell.js"></script>
+  <script src="js/pages/used-car.js"></script>
+  <script src="js/pages/part-time-job.js"></script>
+  <script src="js/pages/chat.js"></script>
+  <script src="js/pages/users.js"></script>
+</body>
+</html>
